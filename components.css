@@ -126,6 +126,127 @@
   }
 }
 
+/* Footer  */
+
+footer {
+  background-color: var(--lightGreen-1);
+  padding-block: 5rem 2rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.logo {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.footer-desc {
+  font-size: 1.4rem;
+  color: var(--black-2);
+  margin-bottom: 2rem;
+}
+
+.footer-social_title {
+  font-size: 1.8rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.footer-social a:link,
+.footer-social a:visited {
+  padding: .5rem .8rem;
+  background-color: var(--white-1);
+  border: 1px solid var(--black-2);
+  border-radius: 8px;
+  color: ;
+}
+
+.footer-social svg {
+  width: 2rem;
+  color: var(--black-2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
