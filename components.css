@@ -31,7 +31,7 @@
   margin-inline: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48em) {
   .nav {
     position: relative;
   }
@@ -117,11 +117,20 @@
 .primary-btn {
   color: var(--white-1);
   background-color: var(--green-1);
+  border: 2px solid var(--green-1);
+  transition: all .3s;
 }
 
-@media only screen and (min-wdith: 768px) {
+.primary-btn:hover,
+.primary-btn:active {
+  color: var(--green-1);
+  background-color: var(--white);
+  border: 2px solid var(--green-1);
+}
+
+@media only screen and (min-width: 48em) {
   .btn {
-    padding: 1.3rem 2rem;
+    padding: .8rem 2rem;
     font-size: 2rem;
   }
 }
@@ -140,7 +149,7 @@ footer {
 }
 
 .logo {
-  width: 10rem;
+  width: 9rem;
   margin-bottom: 2rem;
 }
 
@@ -174,91 +183,140 @@ footer {
   color: var(--black-2);
 }
 
-.footer-social
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.idk {
+.footer-text_title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--black-1);
+  font-weight: 600;
+}
+
+.footer-text a:link,
+.footer-text a:visited {
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+  color: var(--black-2);
+  font-family: 'Raleway';
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+@media only screen and (min-width: 48em) {
+  footer {
+    padding-block: 8rem 4rem;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+  }
+
+  .footer-col1 {
+    flex: 4;
+  }
+
+  .footer-col2,
+  .footer-col3,
+  .footer-col4 {
+    flex: 2;
+  }
+
+  .footer-desc {
+    max-width: 25rem;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-social_title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-text_title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-text a:link,
+  .footer-text a:visited {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#copyright {
+  padding-block: 1rem;
+}
+
+.copyright-text {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--black-3);
+}
+
+@media only screen and (min-width: 48em) {
+  .copyright-text {
+    font-size: 1.6rem;
+  }
+}
+
+/* Store Info Styles */
+
+.store-info_wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20rem;
+  align-items: stretch;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.store-info_item {
+  background-color: var(--lightGreen-1);
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: 12px;
+  width: 15rem;
+}
+
+.store-info_icon {
+  width: 3.2rem;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
+.store-info_title {
+  font-size: 1.4rem;
+  font-family: 'Poppins';
+  font-weight: 500;
+  margin-bottom: .5rem;
+  color: var(--black-1);
+}
+
+.store-info_text {
+  font-size: 1.4rem;
+  font-family: 'Raleway';
+  color: var(--black-2);
+}
+
+@media only screen and (min-width: 48em) {
+  .store-info_wrapper {
+    gap: 2rem;
+  }
+
+  .store-info_item {
+    min-width: 20rem;
+    padding-block: 4rem;
+  }
+
+  .store-info_icon {
+    width: 4.7rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .store-info_title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .store-info_text {
+    font-size: 1.6rem;
+  }
 }
