@@ -19,7 +19,7 @@
 }
 
 .hero-heading {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   line-height: 1.4em;
   text-align: center;
@@ -123,7 +123,7 @@
   color: var(--green-1);
   font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 .our-specials_stars {
   height: 1.5rem;
@@ -156,13 +156,12 @@
 }
 
 @media only screen and (min-width: 48em) {
-
   #our-specials {
-  padding-top: 15rem;
+    padding-top: 15rem;
   }
 
   #our-specials .container {
-  max-width: 900px;
+    max-width: 900px;
   }
 
   .our-specials_wrapper {
@@ -231,8 +230,8 @@
   flex-direction: column;
   padding: 1.5rem;
   border-radius: 12px;
-  background: var(--lightGreen-1) url("images/discount-illustration.png") no-repeat
-  bottom right / 10rem;
+  background: var(--lightGreen-1) url("images/discount-illustration.png")
+    no-repeat bottom right / 10rem;
 }
 
 .discount-images {
@@ -259,7 +258,7 @@
   font-size: 1.4rem;
   font-weight: 900;
   color: var(--green-1);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .discount-title {
@@ -308,18 +307,18 @@
     gap: 2rem;
   }
 
-  .discount-img1, 
-  .discount-img2, 
+  .discount-img1,
+  .discount-img2,
   .discount-img3 {
-  flex: 1;
-  height: 35rem;
+    flex: 1;
+    height: 35rem;
   }
 
   .discont-info {
     flex: 3;
   }
 
-  .discount-text{
+  .discount-text {
     font-size: 2.4rem;
   }
 
@@ -338,7 +337,6 @@
 }
 
 @media only screen and (max-width: 1000px) {
-
   .discount-wrapper {
     gap: 2rem;
   }
@@ -473,5 +471,222 @@
     max-width: 50rem;
     font-size: 1.8rem;
     margin-bottom: 2rem;
+  }
+}
+
+/* Why Us Styles */
+
+.why-us_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.why-us_left {
+  text-align: center;
+}
+
+.why-us_title {
+  font-family: "Poppins";
+  font-size: 1.8rem;
+  color: var(--black-1);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.why-us_text {
+  font-size: 1.6rem;
+}
+
+.why-us_items_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.why-us_item {
+  background-color: var(--lightGreen-1);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.why-us_item-icon {
+  max-width: 5.6rem;
+  margin-inline: auto;
+  margin-bottom: 1.2rem;
+}
+
+.why-us_item_text {
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--black-1);
+}
+
+@media only screen and (min-width: 48em) {
+  .why-us_wrapper {
+    flex-direction: row;
+    max-width: 90rem;
+    margin-inline: auto;
+  }
+
+  .why-us_left {
+    flex: 4;
+    text-align: left;
+  }
+
+  .why-us_title {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .why-us_text {
+    font-size: 1.8rem;
+    line-height: 1.4em;
+  }
+
+  .why-us_right {
+    flex: 3;
+  }
+
+  .why-us_items_wrapper {
+    gap: 1.5rem;
+  }
+
+  .why-us_item {
+    padding: 2.2rem;
+  }
+
+  .why-us_item_icon {
+    max-width: 6.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .why-us_item_text {
+    font-size: 1.8rem;
+  }
+}
+
+/* Testimonial Section Styles */
+
+.testimonial_wrapper {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.testimonial-title {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--black-1);
+}
+
+.testimonial-items_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.testimonial-item {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  background: var(--lightGreen-1);
+  border-radius: 12px;
+}
+
+.testimonial-item_info {
+  flex: 4;
+}
+
+.testimonial-item_img {
+  flex: 2.5;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial-item_img img {
+  object-fit: cover;
+}
+
+.testimonial-item_name {
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  margin-bottom: 1rem;
+  color: var(--black-1);
+}
+
+.testimonial-item_stars {
+  max-height: 1.5rem;
+  width: max-content;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-item_text {
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .testimonial_wrapper {
+    max-width: 90rem;
+  }
+
+  .testimonial-title {
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+    color: var(--black-2);
+  }
+
+  .testimonial-items_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonial-item {
+    padding: 2rem;
+  }
+
+  .testimonial-item_name {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-item_stars {
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-item_text {
+    font-size: 1.6rem;
+    line-height: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .testimonial-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-item_stars {
+    margin-inline: auto;
+  }
+
+  .testimonial-item_img,
+  .testimonial-item_info {
+    flex: auto;
+  }
+
+  .testimonial-item_img img {
+    object-position: top;
+  }
+
+  .testimonial-item_text {
+    margin-bottom: 1rem;
   }
 }
