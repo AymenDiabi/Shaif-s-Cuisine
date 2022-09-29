@@ -1,0 +1,133 @@
+/* page title style */
+
+#page-title {
+  padding-block: 3rem 2rem;
+}
+
+.page-title_text {
+  font-size: 2.2rem;
+  color: var(--black-1);
+}
+
+@media only screen and (min-width: 48em) {
+  
+  #page-title {
+    padding-block: 5rem 3rem;
+  }
+
+  .page-title_text {
+    font-size: 3.6rem;
+  }
+}
+
+/* Our Specials Menu Styles */
+
+#our-specials {
+  padding: 0;
+}
+
+.our-specials_title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  margin-bottom: 2rem;
+}
+
+.our-specials_wrapper {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  max-width: 40rem;
+}
+
+.our-specials_item {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  background-color: var(--lightGreen-1);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.our-specials_item_img,
+.our-specials_item_info {
+  flex: 1;
+}
+
+.our-specials_item_img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.our-specials_item_img img {
+  object-fit: cover;
+}
+
+.our-specials_subheading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--black-1);
+  line-height: 1.3em;
+}
+
+.our-specials_item_price {
+  font-size: 1.8rem;
+  color: var(--green-1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.our-specials_stars {
+  width: max-content;
+}
+
+@media only screen and (min-width: 48em) {
+
+  .our-specials_title {
+    font-size: 2.4rem;
+  }
+
+  .our-specials_wrapper {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: none;
+  }
+
+  .our-specials_item {
+    padding: 2rem;
+  }
+
+  .our-specials_subheading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .our-specials_item_price {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 68.75em) {
+  .our-specials_item_img {
+    flex: 4;
+  }
+
+  .our-specials_item_info {
+    flex: 3;
+  }
+}
+
+.dish-grid_wrapper {
+  grid-template-rows: repeat(2, auto-fit) ;
+}
+
+/* Dish Grid Styles */
+
+#dish-grid {
+  padding-bottom: 0;
+}
+
+#dish-grid:last-of-type {
+  padding-bottom: 10rem;
+}
