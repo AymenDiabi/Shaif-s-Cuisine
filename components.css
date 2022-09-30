@@ -410,3 +410,89 @@ footer {
     margin-bottom: 0;
   }
 }
+
+/* form styles */
+
+#form {
+  padding-block: 5rem;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  color: var(--black-1);
+  font-weight: 600;
+}
+
+.form-wrapper {
+  padding-block: 3rem;
+}
+
+.form-wrapper form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.form-group label {
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+  color: var(--black-2);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea, 
+.form-group select {
+  width: 100%;
+  border: none;
+  background-color: var(--lightGreen-1);
+  font-size: 1.4rem;
+  font-family: 'Raleway';
+  font-weight: 600;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: .5rem;
+  color: var(--black-2);
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-wrapper button[type="submit"] {
+  width: max-content;
+  border: none;
+  padding: 1rem 4rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .form-title {
+    font-size: 3.6rem;
+  }
+
+  .form-wrapper {
+    padding-block: 5rem;
+  }
+
+  .form-wrapper form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-full {
+    grid-column: 1/3;
+  }
+
+  .form-group label {
+    font-size: 1.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea, 
+  .form-group select {
+    font-size: 1.8rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+}
