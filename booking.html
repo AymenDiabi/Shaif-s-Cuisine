@@ -64,7 +64,64 @@
       </div>
     </div>
     <!-- Nav Section End -->
-    <h1 class="idk">This is Our Home Page, Welcome</h1>
+    <!-- Booking Section Start -->
+    <section id="form" data-aos="fade-up""">
+      <div class="container">
+        <h3 class="form-title">Booking a Table</h3>
+        <div class="form-wrapper">
+          <form>
+            <div class="form-group">
+              <label for="First Name">First Name</label>
+              <input type="text" id="firstName" name="first-name" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="Last Name">Last Name</label>
+              <input type="text" id="lasttName" name="last-name" placeholder="Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="Table Type">Table Type</label>
+              <select name="table-type" id="table-type">
+                <option selected disabled>Choose</option>
+                <option value="small">Small (2 people)</option>
+                <option value="medium">Medium (4 people)</option>
+                <option value="large">Large (6 people)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="guestsNumber">Guests Number</label>
+              <input type="number" id="guestsNumber" name="guests-number" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+              <label for="placement">Placement</label>
+              <select name="placement" id="placement">
+                <option selected disabled>Choose</option>
+                <option value="outdoor">Outdoor</option>
+                <option value="indoor">Indoor</option>
+                <option value="rooftop">Rooftop</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group form-full">
+              <label for="note">Note</label>
+              <textarea name="note" id="note" rows="4" Required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Book a Table</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Booking Section End -->
 
     <!-- Footer Start -->
     <footer>
